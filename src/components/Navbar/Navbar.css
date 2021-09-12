@@ -1,0 +1,48 @@
+.main-nav {
+  background-color: #34dcb5;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+.home-link {
+  text-decoration: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.brand-container {
+  cursor: pointer;
+  background-color: #d072d0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-box-shadow: 3px 5px 15px rgba(141, 3, 159, 0.4);
+          box-shadow: 3px 5px 15px rgba(141, 3, 159, 0.4);
+}
+
+.brand-title {
+  margin-right: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #543876;
+}
+
+.icon {
+  margin-top: 10px;
+  color: #543876;
+}
+/*# sourceMappingURL=Navbar.css.map */
