@@ -1,0 +1,25 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #e3de12;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: rgb(55, 53, 53);
+  background: #34dcb5;
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}

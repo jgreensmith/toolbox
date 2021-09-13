@@ -5,7 +5,7 @@
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid #d072d0;
   outline: none;
   width: 320px;
   color: #180b0b;
@@ -33,8 +33,7 @@
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: -webkit-gradient(linear, left top, right top, from(#5d0cff), to(#9b00fa));
-  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 100%);
+  background: #d072d0;
   color: #1a1515;
 }
 /*# sourceMappingURL=TodoForm.css.map */
