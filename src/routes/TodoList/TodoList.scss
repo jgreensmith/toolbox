@@ -4,11 +4,14 @@
   justify-content: start;
   width: 520px;
   min-height: 600px;
-  background: #e3de12;
+  background: #0087ff52;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+  h1 {
+    color: rgb(55, 53, 53);
+  }
 }
 
 .todo-row {
