@@ -20,7 +20,7 @@ const TodoList = () => {
 
     return (
         <div className="list-container">
-            <h1>To do List</h1>
+            <h1>To Do List</h1>
             <TodoForm />
             <>
                 {!todos.length ? (
