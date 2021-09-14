@@ -22,3 +22,14 @@ export const createTodo = (todo) => async (dispatch) => {
         console.log(error);
     }
 }
+
+export const updateTodo = (id, todo) => async (dispatch) => {
+    try {
+        const { data } = await api.updateTodo(id, todo);
+
+        dispatch({ type: 'UPDATE', payload: data });
+
+    } catch (error) {
+        console.log(error);
+    }
+}

@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import TodoItem from '../../components/TodoItem/TodoItem';
 import TodoForm from '../../components/TodoForm/TodoForm';
 import { getTodos } from '../../actions/todos';
 
 import "./TodoList.scss";
+import { IdContext } from '../../contexts/IdContext';
 
 const TodoList = () => {
     const todos = useSelector((state) => state.todos)
-
-    console.log(todos)
     const dispatch = useDispatch();
+    const { currentId } = useContext(IdContext);
+
+    console.log(todos);
 
     useEffect(() => {
         dispatch(getTodos());
-    },[dispatch]);
+    },[currentId, dispatch]);
 
     return (
         <div className="list-container">

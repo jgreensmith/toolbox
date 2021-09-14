@@ -12,19 +12,19 @@
 }
 
 .todo-input::-webkit-input-placeholder {
-  color: #e2e2e2;
+  color: #767676;
 }
 
 .todo-input:-ms-input-placeholder {
-  color: #e2e2e2;
+  color: #767676;
 }
 
 .todo-input::-ms-input-placeholder {
-  color: #e2e2e2;
+  color: #767676;
 }
 
 .todo-input::placeholder {
-  color: #e2e2e2;
+  color: #767676;
 }
 
 .todo-button {
