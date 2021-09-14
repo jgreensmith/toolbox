@@ -5,6 +5,7 @@ import moment from 'moment';
 
 import './TodoItem.scss';
 import { IdContext } from '../../contexts/IdContext';
+import { deleteTodo } from '../../actions/todos';
 
 const TodoItem = ({ todo }) => {
     const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const TodoItem = ({ todo }) => {
                 <p>{moment(todo.createdAt).fromNow()}</p>
                 <div className="btn-wrapper">
                     <button className="btn-update" onClick={() => setCurrentId(todo._id)} >Update</button>
-                    <button className="btn-delete"><DeleteIcon fontSize="large" /></button>
+                    <button className="btn-delete" onClick={() => dispatch(deleteTodo(todo._id))}><DeleteIcon fontSize="large" /></button>
                 </div>
             </div> 
         </>

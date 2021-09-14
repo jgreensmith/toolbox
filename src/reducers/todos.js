@@ -7,6 +7,8 @@ export default (todos = [], action) => {
             return action.payload;
         case 'CREATE':
             return [ ...todos, action.payload ];
+        case 'DELETE': 
+            return todos.filter((todo) => todo._id !== action.payload);
         default:
             return todos;
     }
