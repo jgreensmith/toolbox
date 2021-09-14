@@ -20,9 +20,13 @@
   align-items: center;
   margin: 4px auto;
   color: rgb(55, 53, 53);
-  background: #34dcb5;
-
+  border: 2px solid #d072d0;
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+  background: rgb(198, 198, 198);
+}
+.highlight {
+  background: #34dcb5;
+  border: none;
 }

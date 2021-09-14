@@ -34,9 +34,15 @@
           align-items: center;
   margin: 4px auto;
   color: #373535;
-  background: #34dcb5;
+  border: 2px solid #d072d0;
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+  background: #c6c6c6;
+}
+
+.highlight {
+  background: #34dcb5;
+  border: none;
 }
 /*# sourceMappingURL=TodoList.css.map */

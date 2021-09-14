@@ -4,6 +4,16 @@
   padding-right: 15px;
 }
 
+.btn-completed {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  margin: auto;
+  padding-top: 6px;
+  color: #d072d0;
+}
+
 .todo-details {
   width: 25%;
   display: -webkit-box;
@@ -45,7 +55,8 @@
 .todo-details .btn-wrapper .btn-update {
   background-color: #d072d0;
   border-radius: 5px;
-  color: lightcyan;
+  color: #dadada;
+  font-weight: 600;
   padding: 3px 5px;
 }
 /*# sourceMappingURL=TodoItem.css.map */

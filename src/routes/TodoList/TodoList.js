@@ -11,6 +11,7 @@ const TodoList = () => {
     const todos = useSelector((state) => state.todos)
     const dispatch = useDispatch();
     const { currentId } = useContext(IdContext);
+    
 
     console.log(todos);
 
@@ -28,9 +29,7 @@ const TodoList = () => {
                 ) : (
                     <>
                         {todos.map((todo) => (
-                            <div key={todo._id} className="todo-row">
-                                <TodoItem todo={todo} />
-                            </div>
+                            <TodoItem todo={todo} key={true} />  
                         ))}
                     </>
                 )}
