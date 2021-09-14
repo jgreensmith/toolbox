@@ -1,8 +1,10 @@
+@import "../../styles/variables";
+
 .home-box {
   display: flex;
   justify-content: space-around;
   margin: 40px auto;
-  border: 2px solid #d072d0;
+  border: 2px solid $brand-primary;
   max-width: 800px;
   width: 90%;
   box-sizing: border-box;

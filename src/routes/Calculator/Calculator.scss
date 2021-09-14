@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .calc-box {
   top: 50%;
   left: 50%;
@@ -26,7 +28,7 @@
   }
 }
 button.highlight {
-  background-color: #34dcb5;
+  background-color: $brand-secondary;
 }
 
 input[type="text"] {

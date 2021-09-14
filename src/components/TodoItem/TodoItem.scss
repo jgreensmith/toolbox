@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .todo-text {
   width: 75%;
   text-align: start;
@@ -10,7 +12,7 @@
   background-color: inherit;
   margin: auto;
   padding-top: 6px;
-  color: #d072d0;
+  color: $brand-primary;
 }
 .todo-details {
   width: 25%;
@@ -30,10 +32,10 @@
     }
     .btn-delete {
       background-color: inherit;
-      color: #d072d0;
+      color: $brand-primary;
     }
     .btn-update {
-      background-color: #d072d0;
+      background-color: $brand-primary;
       border-radius: 5px;
       color: rgb(218, 218, 218);
       font-weight: 600;
