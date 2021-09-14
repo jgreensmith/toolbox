@@ -9,7 +9,8 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   min-height: 600px;
   background: #0087ff52;
   text-align: center;

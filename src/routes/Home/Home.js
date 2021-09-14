@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import task from '../../images/task.png';
+import calculator from '../../images/calculator.png'
 
 import './Home.scss';
 
@@ -13,6 +14,15 @@ const Home = () => {
                         <img src={task} alt="Task icon"></img>
                     </button>
                     <p>To Do List</p>
+                </div>
+                
+            </Link>
+            <Link to="/calculator" id="list-link">
+                <div className="todo-box">
+                    <button className="todo padding">
+                        <img src={calculator} alt="Task icon"></img>
+                    </button>
+                    <p>Calculator</p>
                 </div>
                 
             </Link>
