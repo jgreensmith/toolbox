@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { ForecastContext } from '../../contexts/ForecastContext';
+import Error from '../../ForecastComponents/Error/Error';
 import Form from '../../ForecastComponents/Form/Form';
+import Loader from '../../ForecastComponents/Loader/Loader';
 
 import './ForecastPage.scss';
 
 const ForecastPage = () => {
-    const { error, loading, forecast, submitRequest } = useContext(ForecastContext);
+    const { error, loading, forecast, } = useContext(ForecastContext);
 
     return (
         <>
@@ -13,7 +15,9 @@ const ForecastPage = () => {
                 <span className="light">Weather</span> Forecast
             </h1>
             <div className="weather-box">
-                { !error && <Form /> }
+                { !loading && <Form /> }
+                { loading && <Loader /> }
+                { error && <Error /> }
             </div>
         </>
     )

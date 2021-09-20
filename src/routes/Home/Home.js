@@ -26,6 +26,15 @@ const Home = () => {
                 </div>
                 
             </Link>
+            <Link to="/weather" id="list-link">
+                <div className="todo-box">
+                    <button className="todo padding">
+                        <img src={calculator} alt="Task icon"></img>
+                    </button>
+                    <p>Weather Forecast</p>
+                </div>
+                
+            </Link>
         </div>
         
     )

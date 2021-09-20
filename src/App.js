@@ -13,16 +13,16 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/calculator" exact component={Calculator} />
-          <IdContextProvider>
-            <Route path="/todos" exact component={TodoList} />
-          </IdContextProvider>
+        <IdContextProvider>
           <ForecastContextProvider>
-            <Route path="/weather" exact component={ForecastPage} />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/calculator" exact component={Calculator} />
+              <Route path="/todos" exact component={TodoList} />
+              <Route path="/weather" exact component={ForecastPage} />
+            </Switch>
           </ForecastContextProvider>
-        </Switch>
+        </IdContextProvider>
     </Router>
   );
 }

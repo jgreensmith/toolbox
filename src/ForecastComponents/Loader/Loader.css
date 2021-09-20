@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=Loader.css.map */
+.loader-box {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box svg path,
+.box svg rect {
+  fill: #65b6ee;
+}
+/*# sourceMappingURL=Loader.css.map */
