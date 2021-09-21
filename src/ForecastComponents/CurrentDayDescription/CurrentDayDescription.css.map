@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "CurrentDayDescription.scss"
+    ],
+    "names": [],
+    "file": "CurrentDayDescription.css"
+}

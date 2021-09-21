@@ -1,0 +1,25 @@
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+  background-color: #0087ff52;
+  width: 85%;
+  max-width: 675px;
+  min-height: 300px;
+}
+
+.current-card {
+  grid-column: 1;
+  background: blue;
+  width: 100%;
+}
+
+.forecast-container {
+  grid-column: 2 / 4;
+  background: rgb(138, 138, 174);
+  width: 100%;
+}
