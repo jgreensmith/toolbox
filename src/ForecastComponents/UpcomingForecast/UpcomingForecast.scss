@@ -4,3 +4,9 @@ ul {
   justify-content: space-between;
   padding: 10px 0;
 }
+
+@media screen and (max-width: 750px) {
+  ul {
+    overflow-x: scroll;
+  }
+}

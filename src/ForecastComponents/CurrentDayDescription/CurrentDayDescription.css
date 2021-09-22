@@ -12,4 +12,10 @@
           box-sizing: border-box;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 750px) {
+  .description-line {
+    overflow-x: scroll;
+  }
+}
 /*# sourceMappingURL=CurrentDayDescription.css.map */

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './CurrentDayDescriptionItem.scss';
 
 const CurrentDayDescriptionItem = ({ name, value, unit }) => {
     return (

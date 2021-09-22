@@ -46,8 +46,6 @@ const ForecastContextProvider = (props) => {
 
         setForecast({ currentDay, currentDayDetails, upcomingDays });
         setLoading(false);
-
-        console.log({upcomingDays})
     };
 
     const submitRequest = async (location) => {

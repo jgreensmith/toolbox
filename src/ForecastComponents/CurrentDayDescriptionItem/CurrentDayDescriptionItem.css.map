@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,KAAK;CACf",
     "sources": [
         "CurrentDayDescriptionItem.scss"
     ],

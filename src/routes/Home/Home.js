@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import task from '../../images/task.png';
-import calculator from '../../images/calculator.png'
+import calculator from '../../images/calculator.png';
+import weather from '../../images/weather.png';
 
 import './Home.scss';
+import { ForecastContext } from '../../contexts/ForecastContext';
 
 const Home = () => {
+    const { forecast } = useContext(ForecastContext);
+    
+    const [currentWeather, setCurrentWeather] = useState(weather);
+
+    useEffect(() => {
+        if (forecast) {
+            setCurrentWeather(forecast.currentDay.weatherIcon);
+        } else {
+            return;
+        }
+    }, []);
+
+    // icon shows weather of current location, if no location then uses fixed icon 
+
     return (
         <div className="home-box">
             <Link to="/todos" id="list-link">
                 <div className="todo-box">
                     <button className="todo">
-                        <img src={task} alt="Task icon"></img>
+                        <img className="icon" src={task} alt="Task icon"></img>
                     </button>
                     <p>To Do List</p>
                 </div>
@@ -20,7 +36,7 @@ const Home = () => {
             <Link to="/calculator" id="list-link">
                 <div className="todo-box">
                     <button className="todo padding">
-                        <img src={calculator} alt="Task icon"></img>
+                        <img className="icon" src={calculator} alt="Task icon"></img>
                     </button>
                     <p>Calculator</p>
                 </div>
@@ -28,10 +44,10 @@ const Home = () => {
             </Link>
             <Link to="/weather" id="list-link">
                 <div className="todo-box">
-                    <button className="todo padding">
-                        <img src={calculator} alt="Task icon"></img>
+                    <button className="todo forecast">
+                        <img className="icon weather" src={currentWeather} alt="Task icon"></img>
                     </button>
-                    <p>Weather Forecast</p>
+                    <p>Weather</p>
                 </div>
                 
             </Link>
