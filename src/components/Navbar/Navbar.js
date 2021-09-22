@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="brand-container">
                 <Link to='/' className="home-link">
                     <div className="brand-title" >Toolbox</div>
-                    <AppsIcon fontSize="large" className="icon" />
+                    <AppsIcon fontSize="large" className="nav-icon" />
                 </Link>
             </div>
             
