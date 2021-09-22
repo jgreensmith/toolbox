@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const CurrentDayDescriptionItem = ({ name, value, unit }) => {
     return (
-        <div>
+        <div className="small-card" >
             <p>{name}</p>
             <p>{value} {unit}</p>
         </div>

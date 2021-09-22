@@ -1,0 +1,26 @@
+.current-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.current-container img {
+  width: 100px;
+  height: auto;
+}
+
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.temp h2,
+.temp h5 {
+  padding: 0 10px;
+}
+/*# sourceMappingURL=CurrentDay.css.map */

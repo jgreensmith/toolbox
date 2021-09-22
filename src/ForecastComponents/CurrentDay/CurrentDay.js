@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './CurrentDay.scss';
 
 const CurrentDay = ({ weekday, date, location, temperature, weatherIcon, weatherDescription }) => {
     return (
         <div className="current-container">
-            <h2>{weekday}</h2>
-            <p>{date}</p>
-            <p>{location}</p>
+            <div>
+                <h2>{weekday}</h2>
+                <p>{date}</p>
+                <p>{location}</p>
+            </div>
+            
             <div>
                 <img src={weatherIcon} alt="weather icon" />
-                <h3>{temperature}°C</h3>
-                <h5>{weatherDescription}</h5>
+                <div className="temp" >
+                    <h2>{temperature}°C</h2>
+                    <h5>{weatherDescription}</h5>
+                </div> 
             </div>
             
 

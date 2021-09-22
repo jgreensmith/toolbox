@@ -5,13 +5,15 @@ import CurrentDay from '../CurrentDay/CurrentDay';
 import CurrentDayDescription from '../CurrentDayDescription/CurrentDayDescription';
 import UpcomingForecast from '../UpcomingForecast/UpcomingForecast';
 
+import './Forecast.scss';
+
 const Forecast = ({ forecast }) => {
     return (
         <div className="forecast-container">
-            <div className="current-card">
+            <div className="card">
                 <CurrentDay {...forecast.currentDay} />
             </div>
-            <div className="forecast-card">
+            <div className="card">
                 <CurrentDayDescription forecast={forecast.currentDayDetails} />
                 <UpcomingForecast days={forecast.upcomingDays} />
             </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import UpcomingForecastDay from '../UpcomingForecastDay/UpcomingForecastDay';
 
+import './UpcomingForecast.scss';
+
 const UpcomingForecast = ({ days }) => {
     return (
         <ul>

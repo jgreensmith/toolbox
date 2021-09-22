@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+
+li {
+  background-color: $brand-primary;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+}
