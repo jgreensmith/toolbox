@@ -19,18 +19,14 @@ const ForecastPage = () => {
             
             <div className="weather-box">
                 { !forecast ? 
-                    <>
-                    { !loading && <Form /> }
-                    { loading && <Loader /> }
-                    { error && <Error /> }
-                    </>
+                    <div>
+                        { !loading && <Form /> }
+                        { loading && <Loader /> }
+                        { error && <Error /> }
+                    </div>
                     
-                : <><Forecast forecast={forecast} /> </>}
+                : <> <Forecast forecast={forecast} /> </>}
             </div>
-            
-
-            
-
         </>
     )
 }

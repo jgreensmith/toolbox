@@ -28,7 +28,7 @@ const Calculator = () => {
     <>
       <div className="calc-box">
         <form>
-          <input type="text" value={result} />
+          <input className="calc-input" type="text" value={result} />
         </form>
         <div className="keypad">
           <button className="highlight" onClick={clear} id="clear" >Clear</button>

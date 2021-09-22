@@ -34,7 +34,7 @@ button.highlight {
   background-color: #34dcb5;
 }
 
-input[type="text"] {
+.calc-input {
   height: 75px;
   width: 259px;
   background-color: green;

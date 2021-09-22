@@ -6,6 +6,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=UpcomingForecast.css.map */

@@ -6,9 +6,13 @@ import './UpcomingForecastDay.scss';
 const UpcomingForecastDay = ({ weekday, temperature, imgUrl }) => {
     return (
         <li>
-            <img className="mb-2" width="30" src={`https://www.metaweather.com/static/img/weather/${imgUrl}.svg`} alt="" />
-            <span>{weekday}</span>
-            <span>{temperature}</span>
+            <a className="tag" href="https://www.metaweather.com/" target="_blank" rel="noreferrer" >
+                <img src={`https://www.metaweather.com/static/img/weather/${imgUrl}.svg`} alt="" />
+                <div>
+                    <p>{weekday}</p>
+                    <p>{temperature}°C</p>
+                </div>
+            </a>
         </li>
     )
 }

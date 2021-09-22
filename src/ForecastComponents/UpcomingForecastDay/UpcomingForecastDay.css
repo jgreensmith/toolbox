@@ -1,8 +1,21 @@
-li {
-  background-color: #d072d0;
-  padding: 15px;
+.tag {
+  background-color: #625f87;
+  padding: 5px 8px;
   border-radius: 15px;
   -webkit-box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.tag img {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.tag p {
+  color: whitesmoke;
 }
 /*# sourceMappingURL=UpcomingForecastDay.css.map */

@@ -15,18 +15,21 @@ const Form = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
-                aria-label="location"
-                type="text"
-                className="input"
-                placeholder="Search for Location"
-                required
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
-            />
-            <button type="submit" className="button">
-                Search
-            </button>
+            <div className="weather-form">
+                <input 
+                    aria-label="location"
+                    type="text"
+                    className="input"
+                    placeholder="Search for Location"
+                    required
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                />
+                <button type="submit" className="button">
+                    Search
+                </button>
+            </div>
+            
             
         </form>
     )
